@@ -27,15 +27,16 @@
   color: #A23CC7;
   cursor: pointer;
   font-size: 32px;
+  box-shadow: 5px 5px 20px #333333;
 
   transition: all 0.5s 0s cubic-bezier(0.075, 0.82, 0.165, 1);
 
 }
 
-.btn:focus {
+.btn:hover {
   background: #A23CC7;
   color: #ffffff;
-  width: 300px;
+  width: 400px;
 }
 
 .child {

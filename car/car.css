@@ -35,7 +35,7 @@
   min-width: 800px;
   margin-bottom: 200px;
   z-index: 10;
-  animation: drive 20s linear;
+  animation: drive 10s linear;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
 }
