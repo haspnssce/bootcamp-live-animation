@@ -1,0 +1,50 @@
+/*
+#A23CC7
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* background: #101010; */
+  flex-wrap: wrap;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.btn {
+  height: 80px;
+  width: 250px;
+  border-radius: 10px;
+  border: solid 4px #A23CC7;
+  background: #fff;
+  color: #A23CC7;
+  cursor: pointer;
+  font-size: 32px;
+
+  transition: all 0.5s 0s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.btn:focus {
+  background: #A23CC7;
+  color: #ffffff;
+  width: 300px;
+}
+
+.child {
+  background: #333333;
+  height: 300px;
+  width: 250px;
+  margin: 10px;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  border: solid 1px #ffff;
+}

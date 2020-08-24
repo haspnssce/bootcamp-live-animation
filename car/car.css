@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  height: 100vh;
+  max-height: 100vh;
+}
+
+.sky {
+  height: 65%;
+  background: #CBEDF4;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.sky img {
+  width: 300px;
+  margin-bottom: -20px;
+}
+
+.road {
+  background: #aaaaaa;
+  height: 35%;
+  display: flex;
+  align-items: center;
+}
+
+.road img {
+  width: 800px;
+  margin-bottom: 200px;
+  animation: drive 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes drive {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 500px;
+  }
+}
