@@ -10,11 +10,13 @@
 }
 
 .sky {
+  position: relative;
   height: 65%;
   background: #CBEDF4;
   display: flex;
   justify-content: space-evenly;
   align-items: flex-end;
+  z-index: 5;
 }
 
 .sky img {
@@ -30,17 +32,29 @@
 }
 
 .road img {
-  width: 800px;
+  min-width: 800px;
   margin-bottom: 200px;
-  animation: drive 2s;
+  z-index: 10;
+  animation: drive 20s linear;
   animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
 }
 
 @keyframes drive {
-  from {
+  0% {
     margin-left: -100%;
+    transform: scaleX(1);
   }
-  to {
-    margin-left: 500px;
+  50% {
+    transform: scaleX(1);
+    margin-left: 100%;
+  }
+  51% {
+    transform: scaleX(-1);
+    margin-left: 100%;
+  }
+  100% {
+    margin-left: -100%;
+    transform: scaleX(-1);
   }
 }
